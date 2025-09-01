@@ -21,27 +21,27 @@ Este proyecto es una API RESTful desarrollada en Python usando Flask, diseñada 
 
 - **Obtener todas las bandas:**
 	```bash
-	curl -i http://localhost:5000/bands
+	curl -i http://localhost:5001/bands
 	```
 - **Obtener una banda por ID:**
 	```bash
-	curl -i http://localhost:5000/bands/1
+	curl -i http://localhost:5001/bands/1
 	```
 - **Crear una nueva banda:**
 	```bash
-	curl -i -X POST http://localhost:5000/bands \
+	curl -i -X POST http://localhost:5001/bands \
 		-H "Content-Type: application/json" \
 		-d '{"name": "The Beatles", "albums": ["Abbey Road"]}'
 	```
 - **Actualizar una banda existente:**
 	```bash
-	curl -i -X PUT http://localhost:5000/bands/1 \
+	curl -i -X PUT http://localhost:5001/bands/1 \
 		-H "Content-Type: application/json" \
 		-d '{"name": "Queen", "albums": ["A Night at the Opera", "Innuendo"]}'
 	```
 - **Eliminar una banda:**
 	```bash
-	curl -i -X DELETE http://localhost:5000/bands/1
+	curl -i -X DELETE http://localhost:5001/bands/1
 	```
 
 ## Requisitos
